@@ -1,0 +1,642 @@
+:root {
+  --header-color: #000;
+  --base-light-bg-color: #fff;
+}
+
+/* ======================Style for Global Resetting====================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+}
+
+@font-face {
+  font-family: ps4font;
+  src: url(../assets/fonts/sst-cufonfonts/SSTMedium.TTF);
+}
+
+@font-face {
+  font-family: ps4fontheavy;
+  src: url(../assets/fonts/sst-cufonfonts/SSTHeavy.TTF);
+}
+
+@font-face {
+  font-family: ps4fontlight;
+  src: url(../assets/fonts/sst-cufonfonts/SSTLight.TTF);
+}
+
+@font-face {
+  font-family: ps4fontlightIt;
+  src: url(../assets/fonts/sst-cufonfonts/SSTLightIt.TTF);
+}
+
+/* ======================Style for header 1====================== */
+
+.firstHeader {
+  background-color: var(--header-color);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 2.25rem;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.firstHeader img {
+  width: 4.688rem;
+}
+
+/* ======================Style for header 2====================== */
+
+nav {
+  height: 64px;
+  width: 100%;
+  font-family: "ps4font";
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+}
+nav .outerbox {
+  width: 98%;
+  height: 64px;
+  margin: 0 auto;
+  background-color: white;
+  display: flex;
+}
+
+nav .outerbox .left {
+  width: 50%;
+  height: 64px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+nav .outerbox .left .content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+nav .outerbox .left .content ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav .outerbox .left .content svg {
+  margin-left: 5px;
+  margin-right: -28px;
+  margin-top: 1px;
+}
+
+nav .outerbox .left .content ul li a {
+  font-size: 13px;
+  text-decoration: none;
+  color: black;
+  padding-right: 11px;
+  font-weight: lighter;
+}
+
+nav .outerbox .left .content ul i {
+  color: grey;
+  padding-top: 10px;
+}
+
+nav .outerbox .left .content ul li a:hover {
+  color: rgb(47, 110, 202);
+}
+
+nav .outerbox .right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav .outerbox .right .search {
+  font-size: 20px;
+  margin-right: 7px;
+  margin-bottom: 5px;
+}
+
+nav .outerbox .right .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .outerbox .right .button button {
+  color: white;
+  font-size: 16px;
+  background-color: rgb(47, 110, 197);
+  padding: 1px 15px 2px 15px;
+  border-radius: 50px;
+  margin-right: 30px;
+  font-family: "ps4font";
+}
+
+nav .outerbox .right .button button:hover {
+  background-color: rgb(34, 83, 148);
+}
+
+/* ======================Style for Body====================== */
+
+.stellarlogo img {
+  width: 350px;
+}
+
+.backgroundimage > .stellarlogo {
+  position: absolute;
+  top: 94px;
+  left: 100px;
+}
+
+.backgroundimage {
+  position: relative;
+  z-index: -10;
+}
+
+.backgroundimage > h1 {
+  position: absolute;
+  top: 263px;
+  left: 75px;
+  color: white;
+  font-family: "ps4fontlight";
+  font-size: 39px;
+  font-weight: lighter;
+}
+
+.backgroundimage > p {
+  position: absolute;
+  top: 333px;
+  left: 75px;
+  color: white;
+  font-family: "ps4fontlight";
+  font-size: 17px;
+  font-weight: lighter;
+  line-height: 23px;
+}
+
+.backgroundimage .findoutmore {
+  position: absolute;
+  top: 410px;
+  left: 78px;
+  color: black;
+  font-family: "ps4font";
+  font-size: 17px;
+  font-weight: lighter;
+  line-height: 23px;
+  padding: 8px 15px;
+  border-radius: 200px;
+  background-color: white;
+}
+.backgroundimage .findoutmore:hover {
+  background-color: red;
+  color: red;
+  font-size: 50px;
+  border: 2px solid red;
+}
+
+/* ======================Style for Game lines====================== */
+
+.gamelines {
+  padding: 0px 60px 0px 60px;
+  width: 100%;
+  height: 155px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.gamelines .gameimage img {
+  width: 210px;
+  border-radius: 12px;
+  margin-top: 35px;
+  gap: 50px;
+}
+
+.products {
+  width: 100%;
+  height: 390px;
+  display: flex;
+  justify-content: center;
+}
+
+.products .productcontent {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.products .productcontent .left {
+  position: relative;
+}
+
+.products .productcontent .left .title {
+  font-family: ps4fontlight;
+  font-size: 50px;
+}
+
+.products .productcontent .left .description h6 {
+  font-family: ps4fontlight;
+  font-size: 25px;
+  color: rgb(47, 110, 197);
+}
+
+.products .productcontent .left .description p {
+  font-family: ps4fontlight;
+  font-size: 14px;
+  color: grey;
+  padding-top: 8px;
+  line-height: 20px;
+}
+
+.products .productcontent .left .description {
+  margin-top: 45px;
+}
+
+.products .productcontent .left .button1 {
+  background-color: rgb(47, 110, 197);
+  color: white;
+  font-family: "ps4font";
+  font-size: 13px;
+  font-weight: lighter;
+  padding: 12px 22px;
+  border-radius: 200px;
+  margin: 22px 0px 0px 8px;
+}
+
+.products .productcontent .left .button2 {
+  background-color: rgb(212, 59, 0);
+  color: white;
+  font-family: "ps4font";
+  font-size: 13px;
+  font-weight: lighter;
+  padding: 12px 18px;
+  border-radius: 200px;
+  margin: 22px 0px 0px 8px;
+}
+
+.products .productcontent .left .buynow {
+  color: black;
+  font-family: ps4fontlight;
+  font-size: 16px;
+  padding: 25px 10px;
+}
+
+.products .productcontent .right {
+  align-items: center;
+}
+.products .productcontent .right img {
+  margin-top: -24px;
+  margin-right: 10px;
+  width: 825px;
+}
+
+.gamelines .gameimage:hover {
+  transform: translateY(-8px);
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+.gamelines .gameimage img:hover {
+  box-shadow: 0px 10px 10px rgb(204, 204, 204);
+  outline: 3px solid rgb(0, 114, 206);
+  padding: 3px;
+}
+
+.gameimage {
+  opacity: 0.7;
+}
+
+
+.productlist {
+  width: 100%;
+  height: 180px;
+}
+
+.productlist .productlistimage {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productlist .productlistimage img {
+  width: 200px;
+  border-radius: 12px;
+  margin-top: 10px;
+  margin-left: 8px;
+  margin-right: 8px;
+  box-shadow: 0px 5px 10px rgb(224, 224, 224);
+  padding: 15px 20px;
+  opacity: 0.7;
+}
+
+#producttext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: ps4fontlight;
+  color: black;
+  text-align: center;
+  font-size: smaller;
+}
+
+.productlistlines {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.productlistlines h4 > a {
+  text-decoration: none;
+  font-family: ps4fontheavy;
+  color: rgb(204, 204, 204);
+}
+
+.productlistlines h4 > .anchor {
+  color: rgb(47, 110, 197);
+}
+
+.productlistlines h4 > a:hover {
+  color: rgb(47, 110, 197);
+}
+
+/* ======================Style for Games Display Box====================== */
+
+.gamesdisplaybox {
+  width: 100%;
+  height: 800px;
+  background-color: rgb(18, 19, 20);
+}
+
+.gamesdisplaybox .gamestitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+.gamesdisplaybox .gamestitle span {
+  color: white;
+  font-family: ps4fontlight;
+  font-size: 39px;
+  font-weight: 100;
+}
+
+.gamesdisplaybox .gamesbutton{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.gamesdisplaybox .gamesbutton button{
+background-color: white;
+font-family: ps4font;
+padding: 15px 23px;
+border-radius: 40px;
+margin-bottom: 30px;
+position: sticky;
+bottom: 0px;
+}
+
+.gamesdisplaybox .gamesgrid{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  padding: 30px 75px;
+  row-gap: 40px;
+  column-gap: 10px;
+}
+
+.grid-item {
+  text-align: center;
+}
+
+.gamesdisplaybox .gamesgrid img{
+  width: 205px;
+  height: 205px;
+  border-radius: 10px;
+}
+
+.gamesdisplaybox .gamesgrid figcaption{
+  color: white;
+  font-family: ps4fontlight;
+  font-size: 13px;
+  text-align: left;
+}
+/* ======================Style for Footer====================== */
+
+footer .sectionA {
+  width: 100%;
+  height: 404px;
+  background-color: rgb(246, 247, 250);
+  position: relative;
+}
+
+footer .sectionA .sectionAtext {
+  text-align: center;
+  color: rgb(57, 57, 57);
+  font-family: ps4fontlight;
+  font-size: 32px;
+  position: absolute;
+  top: 48px;
+  left: 550px;
+  display: flex;
+  text-align: center;
+}
+
+footer .sectionA .sectionAicons img {
+  position: absolute;
+  width: 117px;
+}
+
+footer .sectionA .sectionAicons .iconA img {
+  top: 160px;
+  left: 450px;
+}
+footer .sectionA .sectionAicons .iconB img {
+  top: 160px;
+  left: 600px;
+}
+footer .sectionA .sectionAicons .iconC img {
+  top: 160px;
+  right: 600px;
+}
+footer .sectionA .sectionAicons .iconD img {
+  top: 160px;
+  right: 450px;
+}
+
+footer .sectionB {
+  width: 100%;
+  height: 136px;
+  display: flex;
+  align-items: center;
+  padding-left: 75px;
+}
+
+footer .sectionB span {
+  font-family: ps4fontlightIt;
+  font-size: 8px;
+}
+
+footer .sectionC {
+  width: 100%;
+  height: 594px;
+  background-color: rgb(0, 67, 156);
+}
+
+footer .sectionC .sectionC1 {
+  width: 90%;
+  height: 95px;
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+}
+
+footer .sectionC .sectionC1 img {
+  height: 53%;
+}
+
+footer .sectionC .sectionC2 {
+  display: flex;
+  justify-content: center;
+}
+footer .sectionC .sectionC2 div {
+  width: 89%;
+  height: 1px;
+  background-color: rgb(63, 107, 173);
+}
+
+footer .sectionC3 {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+}
+
+footer .sectionC .sectionC3 .sectionC3list {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  width: 89%;
+}
+
+footer .sectionC .sectionC3 .sectionC3list ul {
+  list-style: none;
+  font-family: ps4fontlight;
+  color: white;
+  line-height: 30px;
+  font-size: 14px;
+  padding: 10px 45px 10px 20px;
+}
+
+footer .sectionC .sectionC4 {
+  display: flex;
+  justify-content: center;
+}
+
+footer .sectionC .sectionC4 div {
+  margin-top: 8px;
+  width: 89%;
+  height: 1px;
+  background-color: rgb(63, 107, 173);
+}
+
+footer .sectionC .sectionC5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .sectionC .sectionC5 .sectionC5logo {
+  width: 89%;
+  height: 100px;
+  position: relative;
+}
+
+footer .sectionC .sectionC5 .sectionC5logo svg {
+  position: absolute;
+  width: 48px;
+  top: 16px;
+  right: 0px;
+}
+
+footer .sectionC .sectionC5 .sectionC5logo img {
+  position: absolute;
+  width: 250px;
+  top: -10px;
+  left: -15px;
+}
+
+footer .sectionC .sectionC5 .sectionC5description{
+  width: 89%;
+  height: 80px;
+  font-family: ps4fontlight;
+  font-size: 13.5px;
+  line-height: 21px;
+  color: white;
+  letter-spacing: 0.5px;
+  padding-top: 2px;
+}
+
+footer .sectionC .sectionC6 {
+  display: flex;
+  justify-content: center;
+}
+
+footer .sectionC .sectionC6 div {
+  width: 89%;
+  height: 1px;
+  background-color: rgb(63, 107, 173);
+}
+
+
+footer .sectionC .sectionC7{
+  width: 100%;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .sectionC .sectionC7 .centerbox{
+  width: 89%;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .sectionC .sectionC7 .centerbox .left{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .sectionC .sectionC7 .centerbox span{
+  color: white;
+  font-family: ps4fontlight;
+  font-size: 13.5px;
+  letter-spacing: 0.5px;
+}
+
+footer .sectionC .sectionC7 .centerbox .world{
+  color: white;
+  font-family: ps4fontlight;
+  font-size: 22px;
+}
+
+footer .sectionC .sectionC7 .centerbox .angle{
+  color: white;
+  font-family: ps4fontlight;
+}
+
